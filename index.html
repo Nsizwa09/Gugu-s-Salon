@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gugu's Salon</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+<h2 class="logo">Gugu's Salon</h2>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div class="hero-content">
+<h1>Beautiful Hair, Beautiful You</h1>
+<p>Professional women's hair styling, coloring, and beauty care.</p>
+<a href="#contact" class="btn">Book Appointment</a>
+<a href="gallery.html" class="btn">View Gallery</a>
+</div>
+
+</section>
+
+
+
+<!-- SERVICES -->
+
+<section id="services" class="services">
+
+<h2>Our Services</h2>
+
+<div class="service-grid">
+
+    <div class="service-card">
+        <h3>Hair Styling</h3>
+        <p>Modern and classic hairstyles tailored for every occasion.</p>
+    </div>
+
+    <div class="service-card">
+        <h3>Nails and Eyelashes</h3>
+        <p>High definition lashes and precision cut nails that speak for themselves.</p>
+    </div>
+
+    <div class="service-card">
+        <h3>Hair Treatment</h3>
+        <p>Repair damaged hair with professional care products.</p>
+    </div>
+</div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+<div class="about-text">
+<h2>About Our Salon</h2>
+<p>
+At Gugu's Salon we specialize in bringing out the beauty in every woman.
+Our expert stylists deliver premium hair styling, coloring, and treatment
+services in a relaxing and luxurious environment.
+</p>
+</div>
+
+</section>
+
+
+<!-- LOCATION -->
+
+<section class="location">
+    <div class="location" id="location">
+        <h2>Location</h2>
+
+            <p>📍 Bergville</p>
+            <p>📞 078 299 6745</p>
+            <p>🕒 Mon - Sun: 9 AM - 5 PM</p>
+                
+            <div class="map-container">
+                <iframe 
+                    src="https://maps.app.goo.gl./7ELMQZCh96UyTZXQ8?g_st=ac"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+                
+            <div class="cta-buttons">
+                <a href="https://goo.gl/maps/your-custom-map-link" target="_blank">Get Directions</a>
+            </div>
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+<h2>Book an Appointment</h2>
+
+<form id="whatsappForm" class="contact-form">
+
+<input type="text" id="userName" placeholder="Your Name" required>
+
+<input type="text" id="userSurname" placeholder="Surname" required>
+
+<select name="style" id="style" required>
+<option value="" disabled selected hidden>Choose Your Style</option>
+<option value="Sweet and Sour">Sweet and Sour</option>
+<option value="Knotless Braids">Knotless Braids</option>
+<option value="Nails and Eyelashes">Nails and Eyelashes</option>
+<option value="Dark and Lovely">Dark and Lovely</option>
+<option value="Lemonade">Lemonade</option>
+<option value="Straight Back">Straight Back</option>
+<option value="Hair Restore">Hair Restore</option>
+<option value="Snoopy">Snoopy</option>
+<option value="Dread Locks">Dread Locks</option>
+<option value="Straight Up">Straight Up</option>
+</select>
+
+<button type="submit">Send Message</button>
+
+<div id="successNote" style="display:none;">
+Your message has been prepared! Redirecting to WhatsApp...
+</div>
+
+</form>
+</section>
+
+<script src="script.js"></script>
+
+<footer>
+<p>© 2026 Elegance Hair Salon</p>
+</footer>
+
+</body>
+</html>

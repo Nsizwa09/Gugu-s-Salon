@@ -1,0 +1,374 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+}
+
+body{
+background:#fff;
+color:#333;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background-color: rgba(255, 255, 255, 0.5);
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo{
+color:#e91e63;
+font-weight:600;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+url("IMG_0977.JPG");
+background-size:cover;
+background-position:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#e91e63;
+color:white;
+text-decoration:none;
+border-radius:30px;
+}
+
+/* SERVICES */
+
+.services{
+padding:80px 10%;
+text-align:center;
+}
+
+.service-grid{
+margin-top:40px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.service-card{
+padding:30px;
+background:#f9f9f9;
+border-radius:10px;
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ABOUT */
+
+.about{
+padding:80px 10%;
+background:#fff0f6;
+text-align:center;
+}
+
+/* CONTACT */
+
+.contact{
+padding:80px 10%;
+text-align:center;
+}
+
+.contact-form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+padding:12px;
+border:1px solid #ddd;
+border-radius:5px;
+color: #666;
+}
+
+.contact-form button{
+padding:12px;
+border:none;
+background:#e91e63;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+color:white;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:900px){
+
+.service-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.hero h1{
+font-size:36px;
+}
+
+}
+
+@media (max-width:600px){
+
+.nav-links{
+display:none;
+}
+
+.service-grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+}
+
+/* Gallery Layout */
+.gallery-container {
+    padding: 8rem 5% 5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.btn-gold{
+    padding: 15px;
+    background-color: #e91e63;
+    color: white;
+    border-radius: 50px;
+}
+
+.gallery-header h1 {
+    color: var(--accent-gold);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 350px;
+    gap: 15px;
+}
+
+.grid-item {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(197, 160, 89, 0.1);
+    cursor: pointer;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+    filter: grayscale(20%);
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-auto-rows: 200px; /* Smaller base rows for more granular spans */
+    grid-auto-flow: dense; /* Fills in gaps automatically */
+    gap: 20px;
+}
+
+/* Make every 3rd and 7th item larger for visual interest */
+.grid-item:nth-child(3n) {
+    grid-row: span 2;
+}
+
+.grid-item:nth-child(7n) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.grid-item {
+    position: relative;
+    border: none; /* Cleaner look */
+    border-radius: 8px; /* Subtle rounding for elegance */
+    transition: box-shadow 0.4s ease;
+}
+
+.grid-item:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+    z-index: 10;
+}
+
+/* Soft Gold Overlay on Hover */
+.grid-item::after {
+    background: rgba(197, 160, 89, 0.2); /* Tint of your accent gold */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.grid-item:hover::after {
+    opacity: 1;
+}
+
+/* Fix for mobile - reset spans so it doesn't break on small screens */
+@media (max-width: 768px) {
+    .grid-item:nth-child(n) {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+}
+
+
+/* Lightbox UI */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    border: 2px solid var(--accent-gold);
+    animation: zoom 0.3s ease;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.9); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+/* LOCATION */
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;   
+}
+
+.map-container {
+    margin: 2rem auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 50vh;
+    border: 0;
+}
+
+.cta-buttons {
+    margin-top: 1rem;
+}
+
+.cta-buttons a {
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #e91e63;;
+    color: black;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-buttons a:hover {
+    background-color: #e91e63;;
+    color: #fff;
+}
+
+.success-note {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgba(197, 160, 89, 0.1); /* Light gold tint */
+    border-left: 4px solid var(--accent-gold);
+    color: white;
+    font-size: 0.9rem;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
