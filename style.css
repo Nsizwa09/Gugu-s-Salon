@@ -79,6 +79,12 @@ text-decoration:none;
 border-radius:30px;
 }
 
+@media (max-width: 768px) {
+    .btn {
+        gap:5px;
+    }
+}
+
 /* SERVICES */
 
 .services{
