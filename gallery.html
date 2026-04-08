@@ -8,12 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Gugu's Salon</title>
     <link rel="stylesheet" href="gallery-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav class="navbar">
         <div class="logo">Gugu's Salon</div>
-        <ul class="nav-links">
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#services">Services</a></li>
             <li><a href="index.html#contact" class="btn-gold">Book Now</a></li>
@@ -28,28 +34,28 @@
 
         <div class="grid-wrapper" id="galleryGrid">
             <div class="grid-item">
-                <img src="IMG_0951.JPG" alt="Styling 1" loading="lazy" onclick="openLightbox(this.src)">
+                <img src="images/IMG_0951.JPG" alt="Styling 1" loading="lazy" onclick="openLightbox(this.src)">
             </div>
             <div class="grid-item">
-                <img src="IMG_0953.JPG" alt="Styling 2" loading="lazy" onclick="openLightbox(this.src)">
+                <img src="images/IMG_0953.JPG" alt="Styling 2" loading="lazy" onclick="openLightbox(this.src)">
             </div>
             <div class="grid-item">
-                <img src="IMG_0956.JPG" alt="Styling 3" loading="lazy" onclick="openLightbox(this.src)">
+                <img src="images/IMG_0956.JPG" alt="Styling 3" loading="lazy" onclick="openLightbox(this.src)">
             </div>
             <div class="grid-item">
-                <img src="IMG_0977.JPG" alt="Styling 4" loading="lazy" onclick="openLightbox(this.src)">
+                <img src="images/IMG_0977.JPG" alt="Styling 4" loading="lazy" onclick="openLightbox(this.src)">
             </div>
             <div class="grid-item">
-                <img src="IMG_0984.JPG" alt="Styling 5" loading="lazy" onclick="openLightbox(this.src)">
+                <img src="images/IMG_0984.JPG" alt="Styling 5" loading="lazy" onclick="openLightbox(this.src)">
             </div>
             <div class="grid-item">
-                <img src="IMG_1180.HEIC" alt="Styling 6" loading="lazy" onclick="openLightbox(this.src)">
+                <img src="images/IMG_1180.HEIC" alt="Styling 6" loading="lazy" onclick="openLightbox(this.src)">
             </div>
             <div class="grid-item">
-                <img src="IMG_1100.HEIC" alt="Styling 7" loading="lazy" onclick="openLightbox(this.src)">
+                <img src="images/IMG_1100.HEIC" alt="Styling 7" loading="lazy" onclick="openLightbox(this.src)">
             </div>
             <div class="grid-item">
-                <img src="IMG_1209.HEIC" alt="Styling 8" loading="lazy" onclick="openLightbox(this.src)">
+                <img src="images/IMG_1209.HEIC" alt="Styling 8" loading="lazy" onclick="openLightbox(this.src)">
             </div>
             <div class="grid-item">
                 <img src="IMG_1215.HEIC" alt="Styling 9" loading="lazy" onclick="openLightbox(this.src)">
@@ -106,5 +112,6 @@
     </main>
 
     <script src="gallery-script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

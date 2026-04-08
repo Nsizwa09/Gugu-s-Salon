@@ -14,7 +14,13 @@
 <nav class="navbar">
 <h2 class="logo">Gugu's Salon</h2>
 
-<ul class="nav-links">
+<div class="menu-toggle" id="menuToggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<ul class="nav-links" id="navLinks">
 <li><a href="index.html">Home</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#about">About</a></li>
@@ -24,19 +30,23 @@
 </nav>
 </header>
 
+
+<!-- HERO SECTION -->
+
 <section class="hero">
 
 <div class="hero-content">
-<p class="hero-subtitle">Luxury beauty experiences for every woman</p>
 <h1>Beautiful Hair, Beautiful You</h1>
-<p>Professional women's hair styling, coloring, and beauty care in a welcoming, elegant studio.</p>
-<div class="hero-buttons">
+<p>Professional women's hair styling, coloring, and beauty care.</p>
 <a href="#contact" class="btn">Book Appointment</a>
 <a href="gallery.html" class="btn">View Gallery</a>
 </div>
-</div>
 
 </section>
+
+
+
+<!-- SERVICES -->
 
 <section id="services" class="services">
 
@@ -45,83 +55,69 @@
 <div class="service-grid">
 
     <div class="service-card">
-        <div class="service-top">
-            <span class="service-icon">💇‍♀️</span>
-            <h3>Hair Styling</h3>
-        </div>
+        <h3>Hair Styling</h3>
         <p>Modern and classic hairstyles tailored for every occasion.</p>
     </div>
 
     <div class="service-card">
-        <div class="service-top">
-            <span class="service-icon">💅</span>
-            <h3>Nails & Eyelashes</h3>
-        </div>
-        <p>High-definition lashes and precision nails that enhance your natural beauty.</p>
+        <h3>Nails and Eyelashes</h3>
+        <p>High definition lashes and precision cut nails that speak for themselves.</p>
     </div>
 
     <div class="service-card">
-        <div class="service-top">
-            <span class="service-icon">✨</span>
-            <h3>Hair Treatment</h3>
-        </div>
-        <p>Restore shine and strength with luxurious hair repair treatments.</p>
+        <h3>Hair Treatment</h3>
+        <p>Repair damaged hair with professional care products.</p>
     </div>
 </div>
 
 </section>
+
+
+
+<!-- ABOUT -->
 
 <section id="about" class="about">
 
 <div class="about-text">
 <h2>About Our Salon</h2>
-<p>At Gugu's Salon we specialize in bringing out the beauty in every woman. Our expert stylists deliver premium hair styling, coloring, and treatment services in a relaxing, luxurious environment.</p>
-<div class="about-highlights">
-<div class="highlight-pill">Luxurious salon ambiance</div>
-<div class="highlight-pill">Personalized style consultations</div>
-<div class="highlight-pill">Premium products for healthy shine</div>
-</div>
+<p>
+At Gugu's Salon we specialize in bringing out the beauty in every woman.
+Our expert stylists deliver premium hair styling, coloring, and treatment
+services in a relaxing and luxurious environment.
+</p>
 </div>
 
 </section>
 
-<section class="testimonial">
-<h2>Happy Clients</h2>
-<div class="testimonial-grid">
-    <div class="testimonial-card">
-        <p>“Gugu's Salon made my hair look radiant and my confidence soared.”</p>
-        <span>— Lerato</span>
+
+<!-- LOCATION -->
+
+<section class="location">
+    <div class="location" id="location">
+        <h2>Location</h2>
+
+            <p>📍 Bergville</p>
+            <p>📞 078 299 6745</p>
+            <p>🕒 Mon - Sun: 9 AM - 5 PM</p>
+                
+            <div class="map-container">
+                <iframe 
+                    src="https://maps.google.com/maps?q=4%20Broadway%20St%2C%20Bergville%2C%203350%2C%20South%20Africa&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+                
+            <div class="cta-buttons">
+                <a href="https://maps.google.com/maps?q=4%20Broadway%20St%2C%20Bergville%2C%203350%2C%20South%20Africa&t=&z=15&ie=UTF8&iwloc=&output=embed" target="_blank">Get Directions</a>
+            </div>
     </div>
-    <div class="testimonial-card">
-        <p>“Elegant braids and perfect color. Every visit feels luxurious.”</p>
-        <span>— Nandi</span>
-    </div>
-    <div class="testimonial-card">
-        <p>“Friendly, skilled stylists and a relaxing space. Highly recommended!”</p>
-        <span>— Thandi</span>
-    </div>
-</div>
 </section>
 
-<section class="location" id="location">
-    <h2>Location</h2>
-    <p>📍 Bergville</p>
-    <p>📞 078 299 6745</p>
-    <p>🕒 Mon - Sun: 9 AM - 5 PM</p>
-    <div class="map-container">
-        <iframe 
-            src="https://maps.google.com/maps?q=4%20Broadway%20St%2C%20Bergville%2C%203350%2C%20South%20Africa&t=&z=15&ie=UTF8&iwloc=&output=embed"
-            allowfullscreen="" loading="lazy">
-        </iframe>
-    </div>
-    <div class="cta-buttons">
-        <a href="https://maps.google.com/maps?q=4%20Broadway%20St%2C%20Bergville%2C%203350%2C%20South%20Africa&t=&z=15&ie=UTF8&iwloc=&output=embed" target="_blank">Get Directions</a>
-    </div>
-</section>
+
+<!-- CONTACT -->
 
 <section id="contact" class="contact">
 <h2>Book an Appointment</h2>
-<p class="contact-note">Fill in your details and we will prepare your appointment on WhatsApp.</p>
 
 <form id="whatsappForm" class="contact-form">
 
@@ -155,7 +151,7 @@ Your message has been prepared! Redirecting to WhatsApp...
 <script src="script.js"></script>
 
 <footer>
-<p>© 2026 Gugu's Hair Salon</p>
+<p>© Gugu's Hair Salon</p>
 </footer>
 
 </body>
